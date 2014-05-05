@@ -59,6 +59,8 @@ fi
 
 if [ "$OSTYPE" = "linux-gnu" ]; then
   MD5="md5sum"
+elif [ "$OSTYPE" = "darwin13" ]; then
+  MD5="md5sum"
 elif [ "$OSTYPE" = "msys" ]; then
   MD5="md5 -l"
 else
